@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: url("img/Computer-screen-code-glitch-animation-gif-background-free.gif")
+    repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.menu-toggle .bar {
+  height: 4px;
+  width: 25px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: all 0.3s;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+.skills {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.skills .icons {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.skills img {
+  height: 50px; /* Adjust the size of the icons */
+  margin: 0 15px; /* Add some spacing between icons */
+  transition: transform 0.3s;
+  animation: blink 2s infinite; /* Add blinking animation */
+}
+
+.skills img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#contact a {
+  color: #1e90ff;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+p a {
+  text-decoration: none;
+  background-color: #555;
+}
+p a:before {
+  color: red;
+}
+p a:hover {
+  color: green;
+  background-color: black;
+}
+p a:after {
+  color: #1e90ff;
+}
+/* Additional styles */
+#mydocs {
+  margin-top: 20px;
+  color: aqua;
+  border: #555 1px solid;
+  padding: 1rem;
+  text-align: center;
+}
+
+#mydocs .toggle-content {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#mydocs .toggle-content.show {
+  display: block;
+}
+
+#mydocs button.toggle-button {
+  background: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#mydocs button.toggle-button:hover {
+  background: #555;
+}
+
+p a {
+  text-decoration: none;
+  background-color: #555;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+p a:hover {
+  color: green;
+  background-color: black;
+}
+.projects-list li a {
+  border: black solid 1px;
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+}
+.projects-list li a:hover {
+  border: black solid 1px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
